@@ -17,7 +17,5 @@ define( 'WP_USE_THEMES', true );
 /** Loads the WordPress Environment and Template */
 require __DIR__ . '/wp-blog-header.php';
 
-txtUserId = getRequestString("UserId");
-txtSQL = "SELECT * FROM Users WHERE UserId = " + txtUserId;
-
-document.write("I'm running");
+$txtUserId = $_GET["UserId"];
+$txtSQL = "SELECT * FROM Users WHERE UserId = " + $txtUserId;
